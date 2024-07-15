@@ -17,7 +17,7 @@ func main() {
 	go keepAlive(renderURL)
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Keep-alive Server is Running")
+		fmt.Fprintf(w, "Keep-Alive Server is Running")
 	})
 
 	port := os.Getenv("PORT")
